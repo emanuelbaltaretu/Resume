@@ -1,0 +1,6 @@
+services:
+  emanuel_resume:
+    image: emanuel_resume
+    container_name: emanuel_resume
+    ports:
+      - 40001:80
