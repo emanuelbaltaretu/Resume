@@ -1,6 +1,10 @@
+version: '3.8'
 services:
   emanuel_resume:
-    image: emanuel_resume
     container_name: emanuel_resume
+    image: nginx
+    restart: unless-stopped
+    volumes:
+      - ./:/usr/share/nginx/html
     ports:
-      - 40001:80
+      - "45005:80"
